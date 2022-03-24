@@ -10,6 +10,7 @@
 <?php
         $maVariable = 5;
         echo $maVariable;
+        echo "<br>";
         echo gettype($maVariable);
 ?>
 <br>
