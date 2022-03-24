@@ -8,16 +8,15 @@
 </head>
 <body>
     <?php
-        $a = 10;
-        $b = 0.2;
-        $c = 2;
-    function TTC($prixHT, $nbrArt, $txTVA){
-        echo "$prixHT <br>";
-        echo "$nbrArt<br>";
-        echo "$txTVA<br>";
-        return $prixHT * $txTVA * $nbrArt;
+    function test($a){
+        if ($a >= 0){
+            echo "le nombre est positif ! ";
+        }
+        else{
+            echo "le nombre est négatif ";
+        }
     }
-    echo TTC($a,$b,$c);
+    test(0);
     ?>
 </body>
 </html>
