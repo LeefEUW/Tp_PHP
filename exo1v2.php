@@ -9,11 +9,14 @@
 <body>
     <?php
     function test($a){
-        if ($a >= 0){
+        if ($a > 0){
             echo "le nombre est positif ! ";
         }
-        else{
-            echo "le nombre est négatif ";
+        else if($a<0){
+            echo "le nombre est négatif !";
+        }
+        else {
+            echo "le chiffre est 0 ! ";
         }
     }
     test(0);
