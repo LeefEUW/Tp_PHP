@@ -8,10 +8,18 @@
 </head>
 <body>
     <?php
-        $a = 12;
-        $b = 10;
-        $total = $a + $b;
-        echo $total;
+    $a = 5;
+    $b = 3;
+    $c = $a + $b;
+    echo "$a <br>";
+    echo"$b <br>";
+    echo "$c<br>";
+    $a = 2;
+    echo "$a <br>";
+    $c = $a - $b;
+    echo "$a <br>";
+    echo "$b <br>" ;
+    echo "$c <br>";
     ?>
 </body>
 </html>
