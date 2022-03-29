@@ -1,0 +1,11 @@
+header {
+    background-color: rgb(53, 146, 221);
+    margin-bottom: 1%;
+    padding-bottom: 7%;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    font-size: large;
+}

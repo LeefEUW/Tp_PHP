@@ -34,7 +34,7 @@
                 echo round($nbr1 / $nbr2, 2) ;
             break;
             default:
-                echo "L\'opérateur est invalide";
+                echo "L'opérateur est invalide";
             break;
         }
     }
