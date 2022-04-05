@@ -1,12 +1,13 @@
 <?php
-    function insertUser($bdd,$nom,$prenom,$mail,$mdp){
+    function insertUser($bdd,$nom,$prenom,$mail,$mdp, $url){
         try{
-            $req = $bdd->prepare("INSERT INTO utilisateur(nom_util, prenom_util, mail_util, mdp_util) VALUES(:nom_util, :prenom_util, :mail_util, :mdp_util)");
+            $req = $bdd->prepare("INSERT INTO utilisateur(nom_util, prenom_util, mail_util, mdp_util, img_util) VALUES(:nom_util, :prenom_util, :mail_util, :mdp_util, :img_util)");
             $req->execute(array(
                 'nom_util' => $nom,
                 'prenom_util' => $prenom,
                 'mail_util' => $mail,
-                'mdp_util' => $mdp
+                'mdp_util' => $mdp,
+                'img_util' => $url
             ));
 }
         catch(Exception $e)
